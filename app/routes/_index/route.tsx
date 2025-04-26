@@ -26,6 +26,14 @@ export default function IndexRoute(): React.JSX.Element {
             Outline Button
           </Button>
         </div>
+        <h2 className="text-2xl font-bold">Heads Up</h2>
+        <p>
+          This repo demonstrates an issue with CSS specificity regarding the system theme and tailwind v4 + shadcn v2.
+        </p>
+        <p>
+          Everything else works: use <code>remix-themes</code>, <code>next-themes</code> (which is compatible with
+          react-router), or a client-hints implementation to sidestep the issue.
+        </p>
         <h2 className="text-2xl font-bold">Get the Code</h2>
         <p>
           <Link
