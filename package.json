@@ -1,5 +1,5 @@
 {
-  "name": "react-router-color-scheme",
+  "name": "fx-rr-shadcn-theme",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,7 +10,8 @@
     "shadcn": "pnpm dlx shadcn@latest",
     "postshadcn": "pnpm lint:fix",
     "lint": "biome check .",
-    "lint:fix": "biome check --write ."
+    "lint:fix": "biome check --write .",
+    "reset": "pnpm dlx rimraf --glob ./**/node_modules && pnpm dlx rimraf --glob ./**/{dist,build}"
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.12",

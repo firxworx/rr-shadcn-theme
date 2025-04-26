@@ -1,32 +1,38 @@
-# Welcome to React Router!
+# react-router
 
-A modern, production-ready SSR application template for building full-stack React applications using React Router (RR7) and Vite.
+A react-router SSR (remix) full-stack application template with tailwind v4 + shadcn/ui + light/dark theme support.
 
-Tailwind CSS v4 and shadcn/ui ready to go!
+## shadcn/ui 
 
-### shadcn/ui Configuration
+### Configuration
 
 The main `app.css` file imports a separate `shadcn.css` file with the shadcn/ui palette.
 
-The shadcn CLI config file `components.json` references the `shadcn.css` file.
+The shadcn CLI config file `components.json` references the `shadcn.css` file so that it makes changes there.
+
+Review the CSS files after adding any components in case you need to make any adjustments.
 
 ### shadcn CLI
+
+The shadcn CLI is available via the `shadcn` scipt defined in `package.json`. Usage:
 
 ```sh
 pnpm shadcn add button
 ```
 
-The `postshadcn` script in `package.json` will run `pnpm lint:fix` after you use the shadcn CLI to add a component or block. 
+The `postshadcn` script in `package.json` will run `pnpm lint:fix` after any shadcn CLI command.
 
-Do not be alarmed if there are errors from the `lint:fix` process! Most components require _some_ manual adjustment (usually very minor) to integrate with the rest of a codebase.
+Do not be alarmed if you see errors from the `lint:fix` process! This is by design!
 
-### Theme Mode (Color Scheme)
+Many components require _some_ manual adjustment to fully integrate them with the rest of a codebase.
 
-Refer to `README.md` of https://github.com/sergiodxa/react-router-color-scheme-example for details on how the light/dark/system theme mode works. 
+### Theme Support
 
-This approach is courtesy of `@sergiodxa`.
+The light/dark approach is courtesy of `@sergiodxa`.
 
-It delivers flicker-free themes without the need for JavaScript or the overly complex appraoches taken by libraries such as `next-themes` or `remix-themes`.
+Refer to `README.md` of https://github.com/sergiodxa/react-router-color-scheme-example for details on how the light/dark/system theme works. 
+
+The idea is to deliver flicker-free themes without the need for JavaScript nor the overly complex appraoches taken by libraries such as `next-themes` or `remix-themes`.
 
 ## Features
 
@@ -45,7 +51,7 @@ It delivers flicker-free themes without the need for JavaScript or the overly co
 Install the dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development
@@ -53,7 +59,7 @@ npm install
 Start the development server with HMR:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
@@ -63,7 +69,7 @@ Your application will be available at `http://localhost:5173`.
 Create a production build:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## Deployment
