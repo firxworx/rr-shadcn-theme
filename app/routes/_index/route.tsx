@@ -32,7 +32,7 @@ export default function IndexRoute(): React.JSX.Element {
             to="https://github.com/firxworx/rr-shadcn-theme"
             target="_blank"
             rel="noreferrer"
-            className="text-sky-700 dark:text-sky-400 hover:underline"
+            className="text-sky-700 dark:text-sky-400 no-underline hover:underline"
           >
             https://github.com/firxworx/rr-shadcn-theme
           </Link>
