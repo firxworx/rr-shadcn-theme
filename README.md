@@ -2,7 +2,15 @@
 
 A react-router SSR (remix) full-stack application template with tailwind v4 + shadcn/ui + light/dark theme support.
 
-Configured for deployment as a Cloudflare worker: revise `wrangler.jsonc` to reflect your account details.
+Configured for deployment as a Cloudflare worker.
+
+Demo: https://rr-shadcn-theme.bitcurve.workers.dev/
+
+Repo: https://github.com/firxworx/rr-shadcn-theme
+
+## Configuration
+
+Revise `wrangler.jsonc` to reflect your account details and enable deployments.
 
 ## Development
 
