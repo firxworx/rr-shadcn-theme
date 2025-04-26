@@ -2,6 +2,24 @@
 
 A react-router SSR (remix) full-stack application template with tailwind v4 + shadcn/ui + light/dark theme support.
 
+Configured for deployment as a Cloudflare worker: revise `wrangler.jsonc` to reflect your account details.
+
+## Development
+
+Run `pnpm typegen` first and any time you signficantly revise routes or edit `wrangler.jsonc`.
+
+Development
+
+```sh
+pnpm dev
+```
+
+Build 
+
+```sh
+pnpm build
+```
+
 ## shadcn/ui 
 
 ### Configuration

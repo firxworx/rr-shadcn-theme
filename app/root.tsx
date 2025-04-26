@@ -12,8 +12,8 @@ import {
 } from 'react-router'
 
 import type { Route } from './+types/root'
-
 import '@/styles/app.css'
+
 import { getTheme } from '@/theme/theme.server'
 import { ThemeMenu } from '@/theme/theme.components'
 import { Logo } from '@/components/layout/logo'
