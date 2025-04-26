@@ -24,6 +24,5 @@
 
 html,
 body {
-  background-color: light-dark(var(--color-white), var(--color-gray-950));
-  color: light-dark(var(--color-gray-950), var(--color-white));
+  @apply bg-white dark:bg-gray-950;
 }
