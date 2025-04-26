@@ -1,12 +1,14 @@
 # Welcome to React Router!
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A modern, production-ready SSR application template for building full-stack React applications using React Router (RR7) and Vite.
 
-Tailwind CSS v4 and shadcn/ui added for styling.
+Tailwind CSS v4 and shadcn/ui ready to go!
+
+### shadcn/ui Configuration
 
 The main `app.css` file imports a separate `shadcn.css` file with the shadcn/ui palette.
 
-The shadcn CLI configuration `components.json` references the `shadcn.css` file.
+The shadcn CLI config file `components.json` references the `shadcn.css` file.
 
 ### shadcn CLI
 
@@ -17,6 +19,14 @@ pnpm shadcn add button
 The `postshadcn` script in `package.json` will run `pnpm lint:fix` after you use the shadcn CLI to add a component or block. 
 
 Do not be alarmed if there are errors from the `lint:fix` process! Most components require _some_ manual adjustment (usually very minor) to integrate with the rest of a codebase.
+
+### Theme Mode (Color Scheme)
+
+Refer to `README.md` of https://github.com/sergiodxa/react-router-color-scheme-example for details on how the light/dark/system theme mode works. 
+
+This approach is courtesy of `@sergiodxa`.
+
+It delivers flicker-free themes without the need for JavaScript or the overly complex appraoches taken by libraries such as `next-themes` or `remix-themes`.
 
 ## Features
 
