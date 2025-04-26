@@ -8,10 +8,13 @@
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && pnpm tsc --project tsconfig.json --noEmit",
     "shadcn": "pnpm dlx shadcn@latest",
+    "postshadcn": "pnpm lint:fix",
     "lint": "biome check .",
     "lint:fix": "biome check --write ."
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.0",
+    "@react-router/fs-routes": "^7.5.2",
     "@react-router/node": "^7.5.2",
     "@react-router/serve": "^7.5.2",
     "class-variance-authority": "^0.7.1",

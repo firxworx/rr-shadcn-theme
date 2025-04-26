@@ -2,7 +2,21 @@
 
 A modern, production-ready template for building full-stack React applications using React Router.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+Tailwind CSS v4 and shadcn/ui added for styling.
+
+The main `app.css` file imports a separate `shadcn.css` file with the shadcn/ui palette.
+
+The shadcn CLI configuration `components.json` references the `shadcn.css` file.
+
+### shadcn CLI
+
+```sh
+pnpm shadcn add button
+```
+
+The `postshadcn` script in `package.json` will run `pnpm lint:fix` after you use the shadcn CLI to add a component or block. 
+
+Do not be alarmed if there are errors from the `lint:fix` process! Most components require _some_ manual adjustment (usually very minor) to integrate with the rest of a codebase.
 
 ## Features
 
