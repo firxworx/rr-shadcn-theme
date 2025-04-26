@@ -1,20 +1,18 @@
-import type { Route } from "./+types/home";
-import { data, Form } from "react-router";
-import { schema, setColorScheme } from "~/color-scheme-cookie";
+import type { Route } from './+types/home'
+import { data, Form } from 'react-router'
+import { zThemeMode, setColorScheme } from '@/theme/color-scheme-cookie'
 
 export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+  return [{ title: 'New React Router App' }, { name: 'description', content: 'Welcome to React Router!' }]
 }
 
 export async function action({ request }: Route.ActionArgs) {
-  let formData = await request.formData();
-  let colorScheme = schema.parse(formData.get("color-scheme"));
+  const formData = await request.formData()
+  const colorScheme = zThemeMode.parse(formData.get('color-scheme'))
+
   return data(null, {
-    headers: { "Set-Cookie": await setColorScheme(colorScheme) },
-  });
+    headers: { 'Set-Cookie': await setColorScheme(colorScheme) },
+  })
 }
 
 export default function Home() {
@@ -32,5 +30,5 @@ export default function Home() {
         </button>
       </div>
     </Form>
-  );
+  )
 }
