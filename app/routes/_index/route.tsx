@@ -2,6 +2,7 @@ import type React from 'react'
 
 import { HeadMeta } from '@/components/layout/head-meta'
 import { Button } from '@/components/ui/button'
+import { Link } from 'react-router'
 
 export default function IndexRoute(): React.JSX.Element {
   const handleClick = () => {
@@ -25,6 +26,17 @@ export default function IndexRoute(): React.JSX.Element {
             Outline Button
           </Button>
         </div>
+        <h2 className="text-2xl font-bold">Get the Code</h2>
+        <p>
+          <Link
+            to="https://github.com/firxworx/rr-shadcn-theme"
+            target="_blank"
+            rel="noreferrer"
+            className="text-sky-700 dark:text-sky-400 hover:underline"
+          >
+            https://github.com/firxworx/rr-shadcn-theme
+          </Link>
+        </p>
       </section>
     </>
   )

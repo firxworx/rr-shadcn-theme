@@ -1,6 +1,6 @@
 import { data } from 'react-router'
 
-import type { Route } from './+types/_index'
+import type { Route } from './+types/api_.theme'
 
 import { getThemeSetCookieValue } from '@/theme/theme.server'
 import { THEME_INPUT_NAME, zThemeMode } from '@/theme/theme.schema'
