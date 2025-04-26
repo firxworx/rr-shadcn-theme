@@ -1,6 +1,22 @@
-.DS_Store
+# dependencies
 /node_modules/
 
-# React Router
+# react router
 /.react-router/
 /build/
+
+# environment
+.env
+.env.*
+!.env.dev
+
+# cloudflare
+.mf
+/.wrangler
+worker-configuration.d.ts
+
+# cloudflare environment
+.dev.vars
+
+# os
+.DS_Store

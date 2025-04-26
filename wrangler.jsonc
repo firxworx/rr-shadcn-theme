@@ -1,0 +1,23 @@
+/**
+ * Run `pnpm wrangler types` after editing this file.
+ *
+ * @see https://developers.cloudflare.com/workers/wrangler/configuration/
+ * @see https://developers.cloudflare.com/changelog/2025-03-11-process-env-support/
+ */
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "rr-shadcn-theme",
+  "main": "./workers/app.ts",
+  "compatibility_date": "2025-03-21",
+  "compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
+  "send_metrics": false,
+  "assets": {
+    "binding": "ASSETS",
+    "directory": "./build/client"
+  },
+  "observability": {
+    "enabled": true
+  },
+  "keep_vars": true,
+  "workers_dev": true
+}
