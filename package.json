@@ -3,10 +3,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build",
+    "build": "NODE_ENV=production react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "typecheck": "react-router typegen && pnpm tsc --project tsconfig.json --noEmit",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write ."
   },
   "dependencies": {
     "@react-router/node": "^7.5.2",
@@ -19,6 +21,7 @@
     "zod": "^3.24.3"
   },
   "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
     "@react-router/dev": "^7.5.2",
     "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^20",
