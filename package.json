@@ -2,6 +2,7 @@
   "name": "rr-shadcn-theme",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.8.1",
   "scripts": {
     "dev": "vite dev",
     "build": "pnpm typegen && NODE_ENV=production vite build",
