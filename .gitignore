@@ -20,3 +20,8 @@ worker-configuration.d.ts
 
 # os
 .DS_Store
+
+# workflow
+*.wip.*
+*.tmp.*
+*.notes.*
