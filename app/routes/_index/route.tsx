@@ -2,9 +2,6 @@ import type React from 'react'
 
 import { HeadMeta } from '@/components/layout/head-meta'
 import { Button } from '@/components/ui/button'
-import { Link } from 'react-router'
-import { cn } from '@/lib/style'
-import { MoonIcon, SunIcon } from 'lucide-react'
 
 export default function IndexRoute(): React.JSX.Element {
   const handleClick = () => {

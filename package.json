@@ -12,7 +12,7 @@
     "node:start": "react-router-serve ./build/server/index.js",
     "deploy:cloudflare": "wrangler deploy",
     "typegen": "wrangler types && react-router typegen",
-    "typecheck": "pnpm typecheck && pnpm tsc --project tsconfig.json --noEmit",
+    "typecheck": "wrangler types && react-router typegen && pnpm tsc --project tsconfig.json --noEmit",
     "shadcn": "pnpm dlx shadcn@latest",
     "postshadcn": "pnpm lint:fix",
     "lint": "biome check .",
