@@ -54,11 +54,17 @@ Many components require _some_ manual adjustment to fully integrate them with th
 
 ### Theme Support
 
-The light/dark approach is courtesy of `@sergiodxa`.
+The shadcn color palette in `shadcn.css` is revised from the stock shadcn installation to use CSS `light-dark()`
+
+A custom `dark` variant is used that respects the palette definitions.
+
+The arrangement respects the user's `prefers-color-scheme` media-query as default theme while also supporting manual light/dark selection using a class on the document `html` element.
+
+This approach has advantages over the stock shadcn approach and negates the need for `next-themes`, `remix-themes`, and other solutions that require JavaScript to work and add a lot of unnecessary complexity to manage the potential gap between server and client rendering with SSR.
+
+Thanks to `@sergiodxa` and `@rossipedia` for their input on this!
 
 Refer to `README.md` of https://github.com/sergiodxa/react-router-color-scheme-example for details on how the light/dark/system theme works. 
-
-The idea is to deliver flicker-free themes without the need for JavaScript nor the overly complex appraoches taken by libraries such as `next-themes` or `remix-themes`.
 
 ## Features
 
